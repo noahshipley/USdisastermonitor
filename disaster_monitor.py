@@ -114,6 +114,7 @@ def index():
     <body>
         <h1>🌐 Disaster Monitor by Noah Shipley</h1>
         <h2>Select a country to view real-time disaster data:</h2>
+        <a href="https://noahshipley.github.io/thecaldera/">The Caldera Official Site</a>
         <select id="country-select" onchange="refreshData()">
             <option value="US">United States</option>
             <option value="DE">Germany</option>
