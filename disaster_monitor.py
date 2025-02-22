@@ -12,24 +12,24 @@ COUNTRY_DATA_URLS = {
         "flood": "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=07022000&parameterCd=00065,00060"
     },
     "DE": {
-        "earthquake": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
-        "weather": "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=51.1657&lon=10.4515",
-        "flood": "https://api.pegelonline.wsv.de/webservices/rest-api/v2/stations.json"
+    "earthquake": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?minlatitude=47.3&maxlatitude=55.3&minlongitude=5.8&maxlongitude=15.0",
+    "weather": "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=51.1657&lon=10.4515",
+    "flood": "https://api.pegelonline.wsv.de/webservices/rest-api/v2/stations.json"
     },
     "UK": {
-        "earthquake": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
-        "weather": "https://api.weather.gov/alerts/active?area=UK",
+        "earthquake": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?minlatitude=49.5&maxlatitude=60.8&minlongitude=-8.2&maxlongitude=1.8",
+        "weather": "https://www.metoffice.gov.uk/public/data/val/wxfcs/all/json/uk",
         "flood": "https://environment.data.gov.uk/flood-monitoring/id/floods"
     },
     "CA": {
-        "earthquake": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
-        "weather": "https://api.weather.gc.ca/alerts",
-        "flood": "https://dd.weather.gc.ca/hydrometric/doc/hydrometric_readme_en.txt"
+    "earthquake": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?minlatitude=41.7&maxlatitude=83.1&minlongitude=-141.0&maxlongitude=-52.0",
+    "weather": "https://api.weather.gc.ca/alerts/index_e.html?area=CA&format=json",
+    "flood": "https://dd.weather.gc.ca/hydrometric/data/v1/Station/StationList.json"
     },
     "MX": {
-        "earthquake": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
-        "weather": "https://api.weather.gov/alerts/active?area=MX",
-        "flood": "https://api.gob.mx/floods"
+    "earthquake": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson?minlatitude=14.5&maxlatitude=32.7&minlongitude=-118.5&maxlongitude=-86.7",
+    "weather": "https://api.openweathermap.org/data/2.5/alerts?lat=23.6345&lon=-102.5528&appid=YOUR_API_KEY",
+    "flood": "https://api.gob.mx/floods"
     }
 }
 
@@ -125,7 +125,6 @@ def index():
         <div class="section" id="earthquake-section"><p>Loading earthquake data...</p></div>
         <div class="section" id="weather-section"><p>Loading weather alerts...</p></div>
         <div class="section" id="flood-section"><p>Loading flood data...</p></div>
-        <h4>Note: The US weather is only based around Oklahoma as we speak.</h4>
     </body>
     <footer>Owned by The Caldera.</footer>
     </html>
