@@ -89,7 +89,7 @@ def index():
     </head>
     <body>
         <h1>🌐 Disaster Monitor by Noah Shipley</h1>
-        <h2>Currently broadcasts only regions from the United States.<h2>
+        <h2>Currently broadcasts only regions from the United States.</h2>
         <button class="refresh-btn" onclick="refreshData()">🔄 Refresh Data</button>
         <div class="section" id="earthquake-section"><p>Loading earthquake data...</p></div>
         <div class="section" id="weather-section"><p>Loading weather alerts...</p></div>
