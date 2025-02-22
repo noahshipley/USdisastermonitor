@@ -8,7 +8,7 @@ app = Flask(__name__)
 COUNTRY_DATA_URLS = {
     "US": {
         "earthquake": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
-        "weather": "https://api.weather.gov/alerts/active?area=US",
+        "weather": "https://api.weather.gov/alerts/active?area=DC",
         "flood": "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=07022000&parameterCd=00065,00060"
     },
     "DE": {
