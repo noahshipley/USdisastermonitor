@@ -95,6 +95,7 @@ def index():
         <div class="section" id="weather-section"><p>Loading weather alerts...</p></div>
         <div class="section" id="flood-section"><p>Loading flood data...</p></div>
     </body>
+    <footer>Owned by The Caldera.</footer>
     </html>
     """)
 
