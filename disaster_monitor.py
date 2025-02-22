@@ -60,7 +60,7 @@ def index():
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>United States Disaster Monitor</title>
+        <title>Disaster Monitor</title>
         <style>
             body {font-family: Arial; margin: 20px;}
             .section {margin-bottom: 30px;}
@@ -88,7 +88,8 @@ def index():
         </script>
     </head>
     <body>
-        <h1>🌐 US Disaster Monitor by Noah Shipley</h1>
+        <h1>🌐 Disaster Monitor by Noah Shipley</h1>
+        <h2>Currently broadcasts only regions from the United States.<h2>
         <button class="refresh-btn" onclick="refreshData()">🔄 Refresh Data</button>
         <div class="section" id="earthquake-section"><p>Loading earthquake data...</p></div>
         <div class="section" id="weather-section"><p>Loading weather alerts...</p></div>
