@@ -8,7 +8,7 @@ app = Flask(__name__)
 COUNTRY_DATA_URLS = {
     "US": {
         "earthquake": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
-        "weather": "https://api.weather.gov/alerts/active?area=CA",
+        "weather": "https://api.weather.gov/alerts/active?area=OK",
         "flood": "https://waterservices.usgs.gov/nwis/iv/?format=json&sites=07022000&parameterCd=00065,00060"
     },
     "DE": {
@@ -125,6 +125,7 @@ def index():
         <div class="section" id="earthquake-section"><p>Loading earthquake data...</p></div>
         <div class="section" id="weather-section"><p>Loading weather alerts...</p></div>
         <div class="section" id="flood-section"><p>Loading flood data...</p></div>
+        <h4>Note: The US weather is only based around Oklahoma as we speak.
     </body>
     <footer>Owned by The Caldera.</footer>
     </html>
