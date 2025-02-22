@@ -125,7 +125,7 @@ def index():
         <div class="section" id="earthquake-section"><p>Loading earthquake data...</p></div>
         <div class="section" id="weather-section"><p>Loading weather alerts...</p></div>
         <div class="section" id="flood-section"><p>Loading flood data...</p></div>
-        <h4>Note: The US weather is only based around Oklahoma as we speak.
+        <h4>Note: The US weather is only based around Oklahoma as we speak.</h4>
     </body>
     <footer>Owned by The Caldera.</footer>
     </html>
